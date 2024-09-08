@@ -7,8 +7,8 @@ public class VazCar extends Car {
         super(name);
     }
 
-    public String alloyWheels() {
-        System.out.println("Имеются литые диски");
+    private String spinningAlloyWheels() {
+        System.out.println("Прокручивающиеся литые диски");
         return "";
     }
     @Override

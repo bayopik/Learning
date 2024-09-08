@@ -8,8 +8,8 @@ public class LamborginiCar extends Car {
         super(name);
     }
 
-    public String beautifulColor() {
-        System.out.println("Имеется опция выбора необычного цвета");
+    private String highSpeed() {
+        System.out.println("Высокая скорость");
         return "";
     }
 

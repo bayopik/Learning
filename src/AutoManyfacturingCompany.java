@@ -37,9 +37,6 @@ class AutoManyfacturingCompany {
 
     }
 
-
-    int breakDownAtTheManufacturing;
-    int breakDownOnTheRoad;
     public void testCar(ArrayList<Road> roads) {
 
         ArrayList<Car> arrForAddChecking = new ArrayList<>();
@@ -52,7 +49,6 @@ class AutoManyfacturingCompany {
                 System.out.println("Поехала машина " + car.getName() + " по " + roads.get(0).getName());
                 arrForAddChecking.add(car);
             }
-
         }
 
         Collections.shuffle(arrForAddChecking);
@@ -66,5 +62,4 @@ class AutoManyfacturingCompany {
             }
         }
     }
-
 }

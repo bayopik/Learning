@@ -25,6 +25,7 @@ abstract public class Car implements Movement {
         this.motor = new Motor();
         this.autoTransmission = new AutoTransmission();
     }
+
     public Car() {
 
     }
@@ -50,18 +51,16 @@ abstract public class Car implements Movement {
      *** Общий для всех автомобилей функционал
     */
     public void heatedSteeringWheel() {
-        System.out.println("Имеется подогрев руля");
+        System.out.println("Подогрев руля");
     }
 
     public String heatedWindshield() {
-        System.out.println("Имеется подогрев лобового стекла");
+        System.out.println("Подогрев лобового стекла");
         return "";
     }
 
     public String equippedWithSubwoofers() {
-        System.out.println("Имеются сабвуферы");
+        System.out.println("Включение сабвуфера");
         return "";
     }
-
-
 }

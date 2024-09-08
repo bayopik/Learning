@@ -6,7 +6,6 @@ public class CreateCarThrouhtPattern {
     Short generation;
     String power;
 
-
     public String getModel() {
         return model;
     }
@@ -51,7 +50,4 @@ public class CreateCarThrouhtPattern {
             return newCreateCarThrouhtPattern;
         }
     }
-
-
-
 }

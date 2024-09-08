@@ -1,4 +1,5 @@
 public class Road {
+
     public String name;
 
     public String getName() {
@@ -8,4 +9,5 @@ public class Road {
     public Road(String name) {
         this.name = name;
     }
+
 }
