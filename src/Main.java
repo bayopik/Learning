@@ -35,6 +35,10 @@ public class Main {
         Car vaz = facturingCompany.createCar(CarEnum.VAZ);
         Car kia = facturingCompany.createCar(CarEnum.KIA);
 
+        Car lamborginiSecondVariant = facturingCompany.createCar("LAMBORGINI");
+        Car vazSecondVariant = facturingCompany.createCar("VAZ");
+        Car kiaSecondVariant = facturingCompany.createCar("KIA");
+
 
 
     }

@@ -17,4 +17,23 @@ public class FacturingCompany {
         System.out.println("Car created: " + car.getModel());
         return car;
     }
+
+    public Car createCar(String type) {
+        Car car = null;
+        if (type.equalsIgnoreCase("kia")) {
+            car = new Kia("kia");
+            System.out.println("Car created using the second variant: " + car.getModel());
+            return car;
+        } else if (type.equalsIgnoreCase("lamborgini")) {
+            car = new Lamborgini("lamborgini");
+            System.out.println("Car created using the second variant: " + car.getModel());
+            return car;
+        } else if (type.equalsIgnoreCase("vaz")) {
+            car = new Vaz("vaz");
+            System.out.println("Car created using the second variant: " + car.getModel());
+            return car;
+        }
+        return car;
+    }
+
 }
