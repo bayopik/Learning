@@ -1,5 +1,7 @@
 public class VazCar extends Car {
 
+     String intensity;
+
     public VazCar(String brand, String name) {
         super(brand, name);
     }
@@ -12,8 +14,8 @@ public class VazCar extends Car {
         return "";
     }
     @Override
-    public void heatedSteeringWheel() {
-        System.out.println("Возможность выбора интенсивности подогрева руля");
+    public void heatedSteeringWheel(String intensity) {
+        System.out.println(intensity);
     }
 
     @Override

@@ -34,6 +34,9 @@ abstract public class Car implements Movement {
         return name;
     }
 
+    public void heatedSteeringWheel(String intensity) {
+    }
+
     /*
      *** Вложенные классы
     */

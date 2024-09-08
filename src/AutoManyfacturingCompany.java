@@ -16,8 +16,11 @@ class AutoManyfacturingCompany {
     void creatingAuto() {
         cars[0] = new KiaCar();
         cars[1] = new VazCar("vaz", "firstLada");
+        cars[1].heatedSteeringWheel("Интенсивность сильная");
         cars[2] = new VazCar("secondLada");
+        cars[2].heatedSteeringWheel();
         cars[3] = new VazCar("thirdLada");
+        cars[3].heatedSteeringWheel("Интенсивность средняя");
         cars[4] = new LamborginiCar("lamborgini", "firstLamborgini");
         cars[5] = new LamborginiCar("secondLamborgini");
         cars[6] = new LamborginiCar("thirdLamborgini");
