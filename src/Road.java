@@ -1,6 +1,6 @@
 public class Road {
 
-    public String name;
+    private String name;
 
     public String getName() {
         return name;

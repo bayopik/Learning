@@ -1,20 +1,25 @@
-public class LamborginiCar extends Car {
+public class LamborginiCar extends Car implements SwivelWheels {
 
-    public LamborginiCar(String brand, String name) {
-        super(brand, name);
+    public LamborginiCar(String brand, String name, Motor motor, AutoTransmission autoTransmission) {
+        super(brand, name, motor, autoTransmission);
     }
 
-    public LamborginiCar(String name) {
-        super(name);
+    public LamborginiCar(String name, Motor motor, AutoTransmission autoTransmission) {
+        super(name, motor, autoTransmission);
     }
 
-    private String highSpeed() {
-        System.out.println("Высокая скорость");
-        return "";
+    public String highSpeed() {
+        return "Высокая скорость";
     }
 
     @Override
-    public void movement() {
-
+    public void heatedSteeringWheel(Byte intensity) {
+        System.out.println("Интенсивность: " + intensity);
     }
+
+    @Override
+    public void perpendicularParking() {
+        System.out.println("Перпендикулярная парковка");
+    }
+
 }

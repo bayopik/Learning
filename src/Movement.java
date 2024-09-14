@@ -1,3 +1,0 @@
-interface Movement {
-    void movement();
-}

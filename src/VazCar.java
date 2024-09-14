@@ -1,25 +1,20 @@
 public class VazCar extends Car {
 
-     String intensity;
-
-    public VazCar(String brand, String name) {
-        super(brand, name);
-    }
-    public VazCar(String name) {
-        super(name);
+    public VazCar(String brand, String name, Motor motor, AutoTransmission autoTransmission) {
+        super(brand, name, motor, autoTransmission);
     }
 
-    private String spinningAlloyWheels() {
-        System.out.println("Прокручивающиеся литые диски");
-        return "";
+    public VazCar(String name, Motor motor, AutoTransmission autoTransmission) {
+        super(name, motor, autoTransmission);
     }
+
+    public String spinningAlloyWheels() {
+        return "Прокручивающиеся литые диски";
+    }
+
     @Override
-    public void heatedSteeringWheel(String intensity) {
+    public void heatedSteeringWheel(Byte intensity) {
         System.out.println(intensity);
     }
 
-    @Override
-    public void movement() {
-
-    }
 }

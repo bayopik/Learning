@@ -1,10 +1,10 @@
 public class CreateCarThrouhtPattern {
 
-    String model;
-    String brand;
-    String color;
-    Short generation;
-    String power;
+    private String model;
+    private String brand;
+    private String color;
+    private Short generation;
+    private String power;
 
     public String getModel() {
         return model;
@@ -15,7 +15,7 @@ public class CreateCarThrouhtPattern {
      */
     public static class Builder {
 
-        private CreateCarThrouhtPattern newCreateCarThrouhtPattern;
+        private final CreateCarThrouhtPattern newCreateCarThrouhtPattern;
 
         public Builder() {
             newCreateCarThrouhtPattern = new CreateCarThrouhtPattern();

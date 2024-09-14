@@ -1,27 +1,20 @@
 public class KiaCar extends Car {
 
-
-    public KiaCar() {
-
+    public KiaCar(String name, Motor motor, AutoTransmission autoTransmission) {
+        super(name, motor, autoTransmission);
     }
 
-    public void setData(String name, String brand) {
-        this.name = name;
-        this.brand = brand;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-
-    private String parkingSensors() {
-        System.out.println("Функционирует камера заднего вида");
-        return "";
+    public KiaCar(String brand, String name, Motor motor, AutoTransmission autoTransmission) {
+        super(brand, name, motor, autoTransmission);
     }
 
     @Override
-    public void movement() {
-
+    public void heatedSteeringWheel(Byte intensity) {
+        System.out.println("Интенсивность: " + intensity);
     }
+
+    public String parkingSensors() {
+        return "Функционирует камера заднего вида";
+    }
+
 }

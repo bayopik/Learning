@@ -1,6 +1,3 @@
-import factory.Car;
-import factory.CarEnum;
-import factory.FacturingCompany;
 import java.util.ArrayList;
 
 public class Main {
